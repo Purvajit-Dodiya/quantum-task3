@@ -26,6 +26,10 @@ header .navbar .tab {
   margin: 0px 9px;
   padding: 18px 18px;
 }
+header .navbar .tab:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
 header .navbar .logo {
   margin-right: auto;
   padding: 9px;
@@ -44,8 +48,10 @@ header .navbar .dashboard {
 header .navbar .tab {
   position: relative;
 }
-header .navbar .tab > button {
+header .navbar .tab button {
   position: absolute;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
   font-size: 12px;
   color: white;
   background-color: #2A7FF3;
@@ -69,6 +75,9 @@ header .navbar .profile img {
 }
 header .navbar .profile button {
   background-color: #FFFFFF;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
   color: #222222;
   left: 30px;
   top: 5px;
@@ -514,6 +523,10 @@ select {
   transition-timing-function: ease;
   z-index: 4;
   opacity: 1;
+}
+
+.dropdown:hover img {
+  filter: brightness(0) invert(1);
 }
 
 .alertMenu, .announcementsMenu {

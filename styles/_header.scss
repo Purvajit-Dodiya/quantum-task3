@@ -16,6 +16,10 @@ header{
             margin: 0px 9px;
             padding: 18px 18px;
         }
+        .tab:hover {
+            color: $headerhovertext;
+            cursor: pointer;
+        }
         .logo{
             margin-right:auto;
             padding: 9px;
@@ -28,19 +32,18 @@ header{
         .tab{
             position: relative;
 
-        }
-        .tab>button{
-            position: absolute;
-            font-size: 12px;
-            color: white;
-            background-color: #2A7FF3;
-            height: 17px;
-            width: 17px;
-            padding: 0px;
-            border:none;
-            border-radius: 100%;
-            left:30px;
-            top:10px;
+            button{
+                position: absolute;
+                @include text(12px,$mediumtext,white);
+                background-color: #2A7FF3;
+                height: 17px;
+                width: 17px;
+                padding: 0px;
+                border:none;
+                border-radius: 100%;
+                left:30px;
+                top:10px;
+            }
         }
         .profile{
             padding: 9px;
@@ -48,12 +51,12 @@ header{
             img{
                 width: 32px;
                 height: 32px;
-                border: 2px solid #3FD28B;
+                border: 2px solid $headertext;
                 border-radius: 50%;
             }
             button{
                 background-color: #FFFFFF;
-                color: #222222;
+                @include text(12px,$mediumtext,$blacktext);
                 left: 30px;
                 top:5px;
             }
