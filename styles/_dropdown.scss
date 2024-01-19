@@ -1,0 +1,131 @@
+.hamburger-menu {
+    position: relative;
+  }
+
+  .menu {
+    list-style: none;
+    padding: 0px;
+    filter: drop-shadow(#0000003D 0 13px 20px);
+    position: absolute;
+    @include flex(column,start);
+    align-items: start;
+    border-radius: 2px;
+    width: 280px;
+    left: -230px;
+    top:60px;
+    background: #ffffff;
+    z-index: -1;
+    opacity: 0;
+    transition: 1s;
+    transition-timing-function: ease;
+    margin: 0px;
+    li,.li{
+        @include text(14px,$mediumtext,$greentext);
+        border: none;
+        margin: 0px;
+        padding: 16px;
+        list-style: none;
+    }
+    .li{
+        padding-bottom: 0px;
+        display: none;
+    }
+
+    li:hover .li{
+        display: block;
+    }
+}
+    .menu-open{
+        @include flex(column,center);
+      }
+    
+    
+
+.active{
+    background-color: #F3F3F3;
+}
+
+.dropdown:hover .menu{
+    transition: 1s;
+    transition-timing-function: ease;
+    z-index: 4;
+    opacity: 1;
+}
+
+.alertMenu ,.announcementsMenu{
+    left:-260px;
+    width: 315px;
+    // position: relative;
+    max-height: 582px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+    *{padding: 1px 0px;}
+    .alert{
+        width: 90%;
+        // padding: 5px;
+        border-bottom:  1px solid #0000003a;
+    }
+    .active{
+        background-color: #FFFFEE;
+    }
+    
+    .alertMessage{
+        display:grid;
+        max-height: 40px;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+        grid-template-columns: 9fr 1fr;
+        p{
+            @include text(14px,$mediumtext,#222222);
+            margin-right: 5px
+        }
+    }
+    .course{
+        @include flex(row,start);
+        .title{
+            @include text(12px,$mediumtext,$graytext);
+
+        }
+        .body{
+            @include text(12px,$mediumtext,#222222);
+        }
+    }
+    .dateTime{
+        display: flex;
+        justify-content: end;
+        @include text(12px,$mediumtext,$graytext);
+        .attachments{
+            margin-right: auto;
+        }
+    }
+
+    .showAll{
+        width: 100%;
+        @include flex(row,center);
+        position: sticky;
+        bottom: 0;
+        z-index: 3000;
+        background-color: #FFFFFF;
+        align-items: center;
+        color: $greentext;
+        filter: drop-shadow(#0000003D 0 2px 6px);
+        border-top:  2px solid #0000001a;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        p{
+            @include flex(column,center);
+            text-align: center;
+            padding: 5px 0px;
+        }
+        p:nth-child(2){
+            border-left: 2px solid #0000001a;
+        }
+    }
+}
+.announcementsMenu{
+    .showAll{
+    display: grid;
+    height: 48px;
+    grid-template-columns: 1fr 1fr;}
+}

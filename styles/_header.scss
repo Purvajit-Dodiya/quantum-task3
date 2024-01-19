@@ -1,0 +1,75 @@
+header{
+    @include flex(row,center);
+    background-color: $headerbg;
+    .navbar{
+        padding: 0px;
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+        // @include flex(row,end);
+        list-style: none;
+        @include flex(row,center);
+        @include nogap();
+        
+        .tab{
+            @include text(14px,$mediumtext,$headertext);
+            margin: 0px 9px;
+            padding: 18px 18px;
+        }
+        .logo{
+            margin-right:auto;
+            padding: 9px;
+            @include flex(row,center);
+        }
+        .dashboard{
+            @include text(14px,$mediumtext,$bodybg);
+            border-bottom: 4px solid $bodybg;
+        }
+        .tab{
+            position: relative;
+
+        }
+        .tab>button{
+            position: absolute;
+            font-size: 12px;
+            color: white;
+            background-color: #2A7FF3;
+            height: 17px;
+            width: 17px;
+            padding: 0px;
+            border:none;
+            border-radius: 100%;
+            left:30px;
+            top:10px;
+        }
+        .profile{
+            padding: 9px;
+            margin: 0px 9px;
+            img{
+                width: 32px;
+                height: 32px;
+                border: 2px solid #3FD28B;
+                border-radius: 50%;
+            }
+            button{
+                background-color: #FFFFFF;
+                color: #222222;
+                left: 30px;
+                top:5px;
+            }
+        }
+        
+    }
+}
+.hamburger-menu{
+    display:none;
+}
+
+@media only screen and (max-width: 1024px) { 
+    .dashboard,.content,.reports,.admin,.users { 
+      display: none; 
+    } 
+    .hamburger-menu{
+        display: block;
+    }
+}

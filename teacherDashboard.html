@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font quicksand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style></style>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/2191aafffe.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <header>
+      <ul class="navbar">
+        <li class="logo tab">
+          <img src="assets/icons/logo used in header.svg" alt="Quantum logo" />
+        </li>
+        <li class="dashboard tab" id="dashboard">DASHBOARD</li>
+        <li class="content tab">CONTENT</li>
+        <li class="users tab">USERS</li>
+        <li class="reports tab">REPORTS</li>
+        <li class="admin tab">ADMIN</li>
+        <li class="alerts tab dropdown">
+          <img class="dropdownButton" src="assets/icons/alerts.svg" alt="" />
+          <button>2</button>
+
+          <ul class="alertMenu menu">
+            <!-- <li class="alert">
+              <div class="alertMessage">
+                <p>
+                  1 License for Introduction to Algebra has been assigned to
+                  your school
+                </p>
+                <img
+                  src="assets/icons/grade submissions.svg"
+                  alt=""
+                  style="width: 15px; height: 15px"
+                />
+              </div>
+              <div class="course">
+                <p class="title">Course:</p>
+                <p class="body">Advanced Mathematics</p>
+              </div>
+              <div class="dateTime">15-Sep-2018 at 05:21 pm</div>
+            </li>
+            <div class="showAll"><p>SHOW ALL</p></div> -->
+          </ul>
+        </li>
+        <li class="announcements tab dropdown">
+          <img
+            class="dropdownButton"
+            src="assets/icons/announcements.svg"
+            alt=""
+          />
+          <button>1</button>
+          <ul class="announcementsMenu menu">
+            <li class="add-article">Add Article</li>
+          </ul>
+        </li>
+        <li class="profile tab">
+          <img src="assets/images/imageMask-1.png" alt="" />
+          <button>T</button>
+        </li>
+        <li class="hamburger-menu tab dropdown">
+          <img
+            class="dropdownButton"
+            src="assets/icons/hamburger-menu.svg"
+            alt=""
+          />
+          <ol class="menu">
+            <li class="dashboardoption">DASHBOARD</li>
+            <li class="contentoption">
+              CONTENT
+              <ul class="li">
+                <li>COURSE CATALOG</li>
+              </ul>
+            </li>
+            <li class="usersoption">USERS</li>
+            <li class="reportsooption">
+              REPORTS
+              <ul class="li">
+                <li>STUDY REPORT</li>
+              </ul>
+            </li>
+            <li class="adminoption">ADMIN</li>
+          </ol>
+        </li>
+      </ul>
+    </header>
+    <div>
+      <div class="courceAndClass">
+        <button class="coursesTab center">
+          <img src="assets/icons/courses.svg" alt="" />
+          <span>4</span>
+          <p>Courses</p>
+        </button>
+        <button class="classesTab center">
+          <img src="assets/icons/classes.svg" alt="" />
+          <span>4</span>
+          <p>Classes</p>
+        </button>
+      </div>
+      <div class="sorting">
+        <p>Showing 4 out of 4 courses</p>
+        <div class="sorthere center">
+          <label class="drop_down">Sort by:</label>
+          <select name="state" id="">
+            <option value="" selected>Course Name</option>
+            <option value="">random</option>
+          </select>
+        </div>
+        <img src="assets/icons/sort.svg" alt="" />
+      </div>
+      <div class="coursesContainer" id="coursesContainer">
+        <!-- <div class="courseCard">
+          <div class="cradImg">
+            <img src="assets/images/imageMask-1.svg" alt="" />
+          </div>
+          <div class="cardBody">
+            <div class="courseName center">
+              <p>Acceleration</p>
+              <img src="assets/icons/favourite.svg" alt="" />
+            </div>
+            <div class="subjectAndGrade center">
+              <p>Physics</p>
+              <p>Grade 7+2</p>
+            </div>
+            <div class="unitsLessonsTopics center">
+              <div>4 Units</div>
+              <div>18 Lessons</div>
+              <div>24 Topics</div>
+            </div>
+
+            <select name="class" id="">
+              <option value="Mr. Frank's Class B">Mr. Frank's Class B</option>
+              <option value="Mr. Frank's Class A">Mr. Frank's Class A</option>
+            </select>
+            <div class="subjectAndGrade center">
+              <p>50 Students</p>
+              <p>21-Jan-2020 - 21-Aug-2020</p>
+            </div>
+          </div>
+          <div class="cardLinks">
+            <img
+              src="assets/icons/preview.svg"
+              alt=""
+              style="width: 24px; height: 24px"
+            />
+            <img
+              src="assets/icons/manage course.svg"
+              alt=""
+              style="width: 20px; height: 20px"
+            />
+            <img
+              src="assets/icons/grade submissions.svg"
+              alt=""
+              style="width: 20px; height: 20px"
+            />
+            <img
+              src="assets/icons/reports.svg"
+              alt=""
+              style="width: 24px; height: 24px"
+            />
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <footer>
+      <div class="aboutContactUs">
+        <a>About</a>
+        <a>Contact Us</a>
+      </div>
+      <div class="terms">
+        <img src="assets/icons/logo used in footer.svg" alt="" />
+        <p class="copyright">Copyright © 2020-2021</p>
+        <p class="name">Zeus Systems Pvt. Ltd.</p>
+        <p>All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="cards.js"></script>
+    <script src="alerts.js"></script>
+    <script src="announcements.js"></script>
+  </body>
+</html>

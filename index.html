@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font quicksand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/2191aafffe.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li class="logo">
+          <img src="assets/icons/logo used in header.svg" alt="Quantum logo" />
+        </li>
+      </ul>
+    </header>
+
+    <div class="loginContainer">
+      <form action="">
+        <div class="heading flexRow">
+          <i class="fa-solid fa-arrow-left"></i>
+          <p>Log in with Quantum</p>
+        </div>
+
+        <div class="radio flexRow">
+          <div class="radio-item">
+            <input
+              type="radio"
+              name="school"
+              id="District"
+              value="District"
+              checked="checked"
+            />
+            <label for="District" class="tab"> District </label>
+          </div>
+          <div class="radio-item">
+            <input
+              type="radio"
+              name="school"
+              id="Independent-school"
+              value="Independent school"
+            />
+            <label for="Independent-school" class="tab">
+              Independent school
+            </label>
+          </div>
+        </div>
+        <div class="stateContainer feild flexColumn">
+          <label>State*</label>
+          <select name="state" id="states">
+            <option value="Alabama">Alabama</option>
+            <option value="California">California</option>
+          </select>
+        </div>
+        <div class="districtContainer feild flexColumn">
+          <label>District*</label>
+          <select name="state" id="states">
+            <option value="Alabama School District">
+              Alabama School District
+            </option>
+            <option value="Alabama School District">
+              Alabama School District
+            </option>
+          </select>
+        </div>
+        <div class="usernameContainer feild flexColumn">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Username/Email ID*"
+          />
+          <a href="">FORGOT USERNAME?</a>
+        </div>
+        <div class="passwordContainer feild flexColumn">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password*"
+          />
+          <a href="">FORGOT PASSWORD?</a>
+        </div>
+        <div class="rememberMeContainer flexRow">
+          <input
+            type="checkbox"
+            name="rememberMe"
+            id="rememberMe"
+            checked="checked"
+          />
+          <label for="rememberMe">Remember Me</label>
+        </div>
+
+        <button class="loginButton">LOG IN</button>
+      </form>
+    </div>
+
+    <footer>
+      <div class="aboutContactUs">
+        <a>About</a>
+        <span></span>
+        <a>Contact Us</a>
+      </div>
+      <div class="terms">
+        <img src="assets/icons/logo used in footer.svg" alt="" />
+        <p class="copyright">Copyright © 2020-2021</p>
+        <p class="name">Zeus Systems Pvt. Ltd.</p>
+        <p>All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

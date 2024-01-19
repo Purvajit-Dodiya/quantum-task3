@@ -1,0 +1,37 @@
+footer{
+    display:grid;
+    grid-template-rows: 40px 40px;
+    .aboutContactUs{
+        @include flex(row,center);
+        a{
+            @include flex(row,center);
+            margin: 10px 10px;
+            @include text(14px,$mediumtext,$greentext);
+        }
+        span{
+            width: 0px;
+            margin: 10px 0px;
+            border: 0.5px solid $greentext;
+        }
+    }
+    .terms{
+        background-color: $footerbg;
+        @include text(12px,$mediumtext,$graytext);
+        @include flex(row,center);
+        *{
+            @include flex(row,center);
+            margin: 13px 10px;
+
+        }
+        img{
+            width: 90px;
+            @include nogap();
+            padding: 0px 10px;
+            margin: 8px 0px;
+            border-right: 2px solid #0000001F;
+        }
+        .name{
+            font-weight: $boldtext;
+        }
+    }
+}
