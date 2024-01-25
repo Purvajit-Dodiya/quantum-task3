@@ -1,0 +1,145 @@
+body,html{
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    
+}
+body{
+    background-color: #F0F3FE;
+    padding-bottom: 50px;
+}
+p{
+    margin: 0px;
+    padding: 0px;
+}
+#todo-container{
+    margin: 50px;
+    padding-bottom: 20px;
+    /* padding: 20px; */
+    width: 600px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    background-color: #FBFCFF;
+
+}
+
+h2{
+    text-align:center;
+    padding: 10px;
+}
+.center{
+    padding: 0px 20px;
+}
+.addtolist{
+    width: 99%;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 85% 15%;
+    align-items: center;
+    border: 2px solid rgb(38, 57, 77);
+    border-radius: 7px;
+    margin: 10px 0px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.addtolist>input{
+    font-size:16px;
+    border: none;
+    padding: 10px;
+    height: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+.addtolist>input:focus{
+    outline: none;
+}
+
+.addtolist>.add{
+    font-size:16px;
+    height: 100%;;
+    border: none;
+    border-left: 2px solid rgb(38, 57, 77);
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: black;
+    color: #98D8AA;
+}
+.addtolist>.add:hover{
+    background-color: #98D8AA;
+    color: black;
+    transition: 0.5s;
+}
+
+.task{
+    font-size:12px;
+    margin: 10px 20px;
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.task>span:nth-child(1){
+    padding-left: 5px;
+    width: 200px;
+    overflow-wrap: break-word;
+
+}
+.actions{
+    display: flex;
+    justify-content: center;
+}
+.delete-btn,.edit-btn{
+    font-size: 18px;
+    color: gray;
+    cursor: pointer;
+    transition: 0.5s;
+    margin:0px 10px
+}
+.edit-btn:hover{
+    transition: 0.5s;
+    color: #4a90e2;
+}
+.delete-btn:hover{
+    color: red;
+}
+
+select { 
+    font-size: 12px;
+   -webkit-appearance:none;
+   -moz-appearance:none;
+    appearance: none;
+    margin: 3px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 5px;
+    width: 100px;
+    border-radius:5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    color: black;
+    transition: 0.5s;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+  }
+
+
+.task[status="todo"] {
+    background-color: #fec9c9; /* For 'To-Do' status */
+}
+
+.task[status="inProgress"] {
+    background-color: #ffffcc; /* For 'In Progress' status */
+}
+
+.task[status="completed"] {
+    background-color: #ccffcc; /* For 'Completed' status */
+}

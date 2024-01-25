@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      #todo-container {
+        /* max-width: 400px; */
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        border-radius: 5px;
+      }
+
+      #task-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .task {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        background-color: #fff;
+      }
+
+      .task select {
+        margin-left: 10px;
+      }
+
+      .delete-btn {
+        color: #ff0000;
+        cursor: pointer;
+      }
+    </style>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="todo-container">
+      <h2>To-Do App</h2>
+      <div class="center">
+        <div class="addtolist">
+          <input type="text" id="taskInput" placeholder="Enter task" />
+          <button class="add" onclick="addTask()">Add</button>
+        </div>
+      </div>
+      <ul id="task-list"></ul>
+    </div>
+
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2191aafffe.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
