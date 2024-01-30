@@ -1,5 +1,9 @@
 header{
-    @include flex(row,center);
+    width: 100%;
+    ul{
+        list-style: none;
+    }
+    @include flex(row,start);
     background-color: $headerbg;
     .navbar{
         padding: 0px;
